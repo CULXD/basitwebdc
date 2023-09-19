@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.logo h1 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.links {
+    text-align: right;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.links a:hover {
+    animation: followMouse 1s infinite;
+}
+
+.premium {
+    color: red;
+    animation: glowEffect 1s infinite;
+}
+
+nav {
+    background-color: #3c763d;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+@keyframes followMouse {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, -10px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes glowEffect {
+    0% {
+        color: #4caf50;
+        text-shadow: none;
+    }
+    50% {
+        color: #4caf50;
+        text-shadow: 0 0 10px #4caf50;
+    }
+    100% {
+        color: #4caf50;
+        text-shadow: none;
+    }
+}
+
+.glow {
+    animation: glowEffect 1s infinite;
+}
+
+.premium-page {
+    background-color: #4caf50;
+    color: white;
+    padding: 20px;
+}
+
+.premium-page h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: red; /* Premium başlığının rengini kırmızı yapar */
+    animation: glowEffect 1s infinite; /* Premium başlığının parlamasını sağlar */
+}
+
+@keyframes glowEffect {
+    0% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+    50% {
+        color: white;
+        text-shadow: 0 0 20px red;
+    }
+    100% {
+        color: red;
+        text-shadow: 0 0 10px red;
+    }
+}
