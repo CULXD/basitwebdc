@@ -1,1 +1,1 @@
-# basitwebdc
+# BASİT DİSCORD WEBSİTTE
